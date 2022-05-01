@@ -5,6 +5,31 @@ import android.os.Bundle
 import android.util.Log
 import com.adrpien.dynamicfragments.databinding.ActivityMainBinding
 
+/*
+How to dynamically change fragment:
+1. Create class inheriting class Fragment
+    - implement methods
+    - return binding.root in onCreateView
+2. Add fragment container in activity XML
+3. Add fragment to container using transaction:
+    - Create your fragment class instance
+    - crate supportFragmentManager
+    - add/remove/replace your fragments in containers using
+      beginTransaction(container id, fragment class) - FragmentManager method
+    - remember use addToBackStack(null) and commit()
+
+If you want to add static fragment:
+1. Create class inheriting class Fragment
+    - implement methods
+    - return binding.root in onCreateView
+2. Add fragment container in activity XML
+    - add "name" attribute
+
+Fragment is hosted by activity and must be stored in some type of container
+( in the past f.e. Linear Layout, now FragmentContainerView)
+
+ */
+
 
 class MainActivity : AppCompatActivity() {
 

@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView"
@@ -26,4 +27,6 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:text="Usuń" />
+
+
 </LinearLayout>
